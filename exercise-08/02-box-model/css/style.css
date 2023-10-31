@@ -1,4 +1,13 @@
 #box {
   background-color: rgba(180,49,36,0.5);
-  /* add your properties here */
+  padding-left: 50px;
+  padding-right: 50px;
+  /* border: 1px dashed #222;
+  border-bottom: 5px solid #222;
+  margin: 50px 0px 0px 50px;
+  add your properties here */
 }
+
+/*body{
+  margin: 0px;
+} */
