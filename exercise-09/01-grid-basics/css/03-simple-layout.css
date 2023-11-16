@@ -19,3 +19,49 @@ section {
 /* DO NOT TOUCH ANY STYLES ABOVE THIS LINE! */
 /* WRITE YOUR STYLES BELOW! 👇👇👇           */
 /* **************************************** */
+
+body{
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "masthead   masthead"
+  "navigation   welcome"
+  "copyright    copyright";
+}
+
+h2{
+  margin-top: 0;
+  /* The header should be 20 pixels away from the top of body; how to get rid of extra space*/
+}
+
+p{
+  margin: 0px;
+}
+
+header,
+footer{
+  padding: 0 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+header{
+  grid-area: masthead;
+}
+
+nav{
+  grid-area: navigation;
+}
+
+main{
+  grid-area: welcome;
+}
+
+footer{
+  grid-area: copyright;
+}

@@ -1,8 +1,25 @@
 /* 02-layout-b.css */
-
-body {
+body{
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header   header"
+    "nav      main"
+    "footer   footer";
+  grid-gap: 20px;
+}
+
+h1{
+  margin-top: 0;
+}
+
+header,
+footer{
+  padding-left: 20px;
 }
 
 header,
@@ -13,4 +30,69 @@ footer {
 
 section {
   background-color: #ddd;
+  padding: 20px;
 }
+
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+}
+
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-area: main;
+}
+
+  /*
+  grid-template-areas:
+    "welcome   welcome"
+    "cats   coming-soon"
+  */
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+section p{
+  margin-bottom: 0;
+}
+
+footer{
+  grid-area: footer;
+}
+
+#welcome{
+  grid-column: 1/ -1;
+}
+
+#cats{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#coming-soon{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/*
+#welcome{
+  grid-area: welcome;
+}
+
+#cats{
+  grid-area: cats;
+}
+
+#coming-soon{
+  grid-area: coming-soon;
+}
+*/

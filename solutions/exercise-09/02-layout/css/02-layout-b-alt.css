@@ -60,13 +60,13 @@ footer {
 }
 
 #welcome {
-  grid-column: 1 / -1;
+  grid-column: 1/ -1;
 }
 
-#cats {
+#cats{
   grid-column: 1;
 }
 
-#coming-soon {
+#coming-soon{
   grid-column: 2;
 }
